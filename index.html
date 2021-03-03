@@ -24,7 +24,9 @@ body {
   justify-content: center;
   background-image: url('crawl.gif');
   background-size: cover;
-
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
 }
 
 .logo {
