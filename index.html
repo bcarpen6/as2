@@ -1,24 +1,68 @@
 <html>
 <head>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        .imgbox {
-            display: grid;
-            height: 100%;
-        }
-        .center-fit {
-            max-width: 100%;
-            max-height: 100vh;
-            margin: auto;
-        }
-    </style>
+<style type="text/css">
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+body {
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.hero { 
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('crawl.gif');
+  background-size: cover;
+
+}
+
+.logo {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+}
+  
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  position: relative;
+  color: #ffffff;  
+  line-height: 0.9;
+  text-align: center;
+}
+
+.content{
+  position: relative;
+  text-align: center;
+}
+
+</style>
 </head>
 <body>
-<div class="imgbox">
-    <img class="center-fit" src='crawl.gif'>
+<div class="hero">
+ <div class="content">
+    <img width="400" src="logo.png" />
+    <h1>CRAWL</h1>
 </div>
+ </div>
 </body>
 </html>
